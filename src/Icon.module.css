@@ -1,0 +1,37 @@
+/* src/components/SocialIcons.css */
+
+.socialicons {
+  display: flex;
+  justify-content: center; 
+  gap: 1.5rem; 
+  margin-top: 1.5rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #ffffff; 
+  transition: color 0.3s ease; 
+  animation: iconFadeInScale 3s ease-out forwards;
+}
+
+.icon:hover {
+  color: #0080ff; 
+}
+
+.socialicons a:nth-child(1) .icon:hover {
+  color: #000000;
+}
+.socialicons a:nth-child(2) .icon:hover {
+  color: #c13584;
+}
+
+@keyframes iconFadeInScale {
+     0% {
+    opacity: 0;          
+    transform: scale(0.3); 
+  }
+  100% {
+    opacity: 1;           
+    transform: scale(1); 
+  }
+}
