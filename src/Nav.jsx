@@ -1,4 +1,3 @@
-import React from 'react';
 import classes from './Nav.module.css';
 
 const Nav = () => {
@@ -6,7 +5,7 @@ const Nav = () => {
     <header className={classes.navbar}>
       <div className={classes.profile}>
         <img 
-          src="public/IMG_0298.PNG"
+          src="/IMG_0298.PNG"
           alt="Placeholder de Perfil"
           className={classes.profileimg} 
         />
