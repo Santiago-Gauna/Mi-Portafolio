@@ -5,6 +5,9 @@ import classes from './Main.module.css'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <App/>
+    <div className={classes.background}>
+      <App />
+    </div>
   </StrictMode>,
 )
+
