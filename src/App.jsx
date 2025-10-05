@@ -60,8 +60,8 @@ function App() {
       </div>
       <div className={classes.secundario}>
         <h2 className={classes.h2pri}>Experiencia</h2>
-        <div className={classes["tech-container"]}>
-          <div className={classes["tech-icons"]}>
+        <div className={classes.tech-container}>
+          <div className={classes.tech-icons}>
             {techs.map((t) => (
               <div
                 key={t.id}
@@ -74,7 +74,7 @@ function App() {
           </div>
 
           {active && (
-            <p key={active} className={classes["tech-text"]}>
+            <p key={active} className={classes.tech-text}>
               {techs.find((t) => t.id === active)?.text}
             </p>
           )}
