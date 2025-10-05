@@ -1,9 +1,10 @@
 import classes from './Nav.module.css';
-
+import img from './assets/IMG_0298.PNG'
 const Nav = () => {
   return (
     <header className={classes.navbar}>
       <div className={classes.profile}>
+        <img src={img} className={classes.profileimg} alt="Foto de Perfil" />
         <span className={classes.profilename}>Santiago Gauna</span>
       </div>
 
