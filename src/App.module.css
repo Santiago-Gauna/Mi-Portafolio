@@ -37,7 +37,7 @@
   animation: textFadeInScale 3s ease-out forwards;
 }
 
-.tech-container {
+.techcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -46,7 +46,7 @@
 }
 
 
-.tech-icons {
+.techicons {
   display: flex;
   gap: 2rem;
   cursor: pointer;
@@ -64,7 +64,7 @@
   }
 }
 
-.tech-text {
+.techtext {
   margin-top: 1rem;
   font-size: 1.1rem;
   font-weight: 500;
@@ -75,7 +75,7 @@
   border-radius: 6px;
 }
 
-.tech-container {
+.techcontainer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -84,7 +84,7 @@
   margin : 5rem ;
 }
 
-.tech-icons {
+.techicons {
   display: flex;
   gap: 2rem;
   cursor: pointer;
@@ -95,7 +95,7 @@
   to { opacity: 1; transform: translateY(0); }
 }
 
-.tech-text {
+.techtext {
   margin-top: 1rem;
   font-size: 1.1rem;
   font-weight: 500;
