@@ -4,11 +4,6 @@ const Nav = () => {
   return (
     <header className={classes.navbar}>
       <div className={classes.profile}>
-        <img 
-          src="/IMG_0298.PNG"
-          alt="Placeholder de Perfil"
-          className={classes.profileimg} 
-        />
         <span className={classes.profilename}>Santiago Gauna</span>
       </div>
 
