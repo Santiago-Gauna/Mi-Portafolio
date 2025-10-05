@@ -5,7 +5,7 @@ const Nav = () => {
     <header className={classes.navbar}>
       <div className={classes.profile}>
         <img 
-          src="/IMG_0298.PNG"
+          src="/Mi-Portafolio/IMG_0298.PNG"
           alt="Placeholder de Perfil"
           className={classes.profileimg} 
         />
