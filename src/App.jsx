@@ -59,7 +59,7 @@ function App() {
         <Icon />
       </div>
       <div className={classes.secundario}>
-        <h2 className={classes.h2pri}>Experiencia</h2>
+        <h2 className={classes.h2pri} id='Experiencia'>Experiencia</h2>
         <div className={classes.techcontainer}>
           <div className={classes.techicons}>
             {techs.map((t) => (

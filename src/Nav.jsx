@@ -1,5 +1,6 @@
-import classes from './Nav.module.css';
-import img from './assets/IMG_0298.PNG'
+import classes from "./Nav.module.css";
+import img from "./assets/IMG_0298.PNG";
+import {Link} from 'react-scroll'
 const Nav = () => {
   return (
     <header className={classes.navbar}>
@@ -9,7 +10,9 @@ const Nav = () => {
       </div>
 
       <nav className={classes.navlinks}>
-        <a href="#experiencia">Experiencia</a>
+        <Link to="Experiencia" smooth={true} duration={600}>
+          Experiencia
+        </Link>
         <a href="#proyectos">Proyectos</a>
         <a href="#acerca-de-mi">Acerca de mí</a>
       </nav>
