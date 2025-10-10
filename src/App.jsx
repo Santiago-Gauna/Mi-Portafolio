@@ -8,6 +8,7 @@ import { DiNodejs } from "react-icons/di";
 import { FaCss3Alt } from "react-icons/fa";
 import { DiMongodb } from "react-icons/di";
 import { FaDatabase } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 function App() {
   const [active, setActive] = useState(null);
@@ -59,7 +60,9 @@ function App() {
         <Icon />
       </div>
       <div className={classes.secundario}>
-        <h2 className={classes.h2pri} id='Experiencia'>Experiencia</h2>
+        <h2 className={classes.h2pri} id="Experiencia">
+          Experiencia
+        </h2>
         <div className={classes.techcontainer}>
           <div className={classes.techicons}>
             {techs.map((t) => (
@@ -80,6 +83,87 @@ function App() {
           )}
         </div>
       </div>
+      <Link id="about" className={classes.aboutSection}>
+        <h2 className={classes.h2pri}>Acerca de mí</h2>
+
+        <div className={classes.aboutContainer}>
+          <div
+            className={`${classes.aboutCard} ${
+              active === "infra" ? classes.activeCard : ""
+            }`}
+            onClick={() => setActive(active === "infra" ? null : "infra")}
+          >
+            <div className={classes.aboutHeader}>
+              <h3>🧰 Técnico en Infraestructura Informática</h3>
+              <span>{active === "infra" ? "▲" : "▼"}</span>
+            </div>
+
+            {active === "infra" && (
+              <div className={classes.aboutContent}>
+                <p>
+                  Soy técnico en infraestructura informática con 2 años de
+                  experiencia en el sector. Mi trayectoria profesional abarca
+                  una amplia gama de habilidades técnicas y un fuerte enfoque en
+                  la solución de problemas.
+                </p>
+                <ul>
+                  <li>Administración y configuración de sistemas de CCTV.</li>
+                  <li>Configuración de switches y puntos de acceso (AP).</li>
+                  <li>
+                    Gestión de firewalls Fortinet y administración de Tenant.
+                  </li>
+                  <li>Soporte técnico helpdesk.</li>
+                </ul>
+                <p>
+                  También tengo experiencia como{" "}
+                  <b>Técnico en Hardware (3 meses)</b>, realizando mantenimiento
+                  y reparación de equipos informáticos.
+                </p>
+                <p>
+                  <b>Habilidades:</b> Redes, seguridad, SQL Server, Veeam,
+                  vCenter y VMware.
+                </p>
+              </div>
+            )}
+          </div>
+          <div
+            className={`${classes.aboutCard} ${
+              active === "dev" ? classes.activeCard : ""
+            }`}
+            onClick={() => setActive(active === "dev" ? null : "dev")}
+          >
+            <div className={classes.aboutHeader}>
+              <h3>💻 Desarrollador Full-Stack</h3>
+              <span>{active === "dev" ? "▲" : "▼"}</span>
+            </div>
+
+            {active === "dev" && (
+              <div className={classes.aboutContent}>
+                <p>
+                  Actualmente me estoy formando como{" "}
+                  <b>Desarrollador Full-Stack</b> en BIOS, con sólidos
+                  conocimientos en el desarrollo de aplicaciones web modernas.
+                </p>
+                <ul>
+                  <li>JavaScript, Node.js, HTML5, CSS3 y React.</li>
+                  <li>Consumo de APIs mediante Axios.</li>
+                  <li>Diseño y prototipado en Figma.</li>
+                </ul>
+                <p>
+                  Combino mi experiencia en infraestructura con mis habilidades
+                  en desarrollo para ofrecer soluciones integrales, tanto a
+                  nivel backend como frontend.
+                </p>
+                <p>
+                  Mi objetivo es seguir creciendo como profesional, integrando
+                  la visión del técnico en infraestructura con la del
+                  desarrollador.
+                </p>
+              </div>
+            )}
+          </div>
+        </div>
+      </Link>
     </>
   );
 }

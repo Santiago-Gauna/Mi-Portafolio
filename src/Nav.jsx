@@ -14,7 +14,7 @@ const Nav = () => {
           Experiencia
         </Link>
         <a href="#proyectos">Proyectos</a>
-        <a href="#acerca-de-mi">Acerca de mí</a>
+        <Link to="about" smooth={true} duration={600}>Acerca de mí</Link>
       </nav>
     </header>
   );
